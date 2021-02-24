@@ -68,6 +68,15 @@ body {
     outline: none;
     box-shadow: none;
 }
+/* .workspaceMain {
+    margin-top: -800px;
+    margin-left: 175px;
+    background-color: rgb(138, 138, 138);
+    width: 1125px;
+    height: 562.5px;
+    border-radius: 25px;
+    padding: 7.5px;
+} */
 
 .footer {
     border-radius: 5px;

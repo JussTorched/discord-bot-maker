@@ -4,7 +4,6 @@ function colorMode() {
     const element = document.getElementById('colorMode');
     const body = document.getElementById('mainBody');
     const bgColor = window.getComputedStyle(body);
-    console.log(bgColor.getPropertyValue('background-color').toString())
     if (bgColor.getPropertyValue('background-color').toString() === 'rgb(250, 235, 215)') {
         element.innerHTML = 'Light Mode';
     } else {
@@ -26,4 +25,11 @@ function pageLoad() {
         const element = document.getElementById('colorMode');
         element.innerHTML = 'Dark Mode';
     }
+}
+
+function projectCreate() {
+    const element = document.getElementById('projectCreate');
+
+    element.style.visibility = 'hidden';
+
 }
