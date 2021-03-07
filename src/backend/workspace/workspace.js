@@ -13,6 +13,7 @@ function colorMode() {
 }
 
 function pageLoad() {
+    console.log(Navigator.connection)
     if (localStorage.getItem('colorMode') == null) {
         const body = document.getElementById('mainBody');
         const bgColor = window.getComputedStyle(body);
@@ -28,8 +29,15 @@ function pageLoad() {
 }
 
 function projectCreate() {
-    const element = document.getElementById('projectCreate');
+    const element = document.getElementById('workspaceMain');
+    element.style.visibility = 'visible';
+    const tools = document.getElementById('workInfo');
+    tools.style.visibility = 'visible';
+    const button = document.getElementById('projectCreate');
+    button.style.visibility = 'hidden';
+}
 
-    element.style.visibility = 'hidden';
-
+function openCloseList() {
+    const dropdown = document.getElementById('cmdList');
+    dropdown.classList.toggle("show");
 }

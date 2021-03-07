@@ -14,12 +14,22 @@
         <a href="../landing/index.html">Home</a>
         <a href="workspace.html">Workspace</a>
     </div>
-    <div>
-        <br>
-    </div>
+    <br>
     <div class="workspace">
+        <div id="workInfo">
+            <input placeholder="Project Name" id="projectName" spellcheck="true"></input>
+            <div class="botInfo">
+                Prefix: <input placeholder="Prefix" id="prefix" spellcheck="true"></input>
+                Status: <input placeholder="Status" id="status" spellcheck="true"></input>
+            </div>
+            <div class="actions" id="actions">
+                <select>
+                    <option value="">Commands</option>
+                </select>
+            </div>
+        </div>
         <button id="projectCreate" onclick="projectCreate()">Create a project</button>
-        <div class="workspaceMain">
+        <div id="workspaceMain" class="workspaceMain">
         </div>
     </div>
     <div>
